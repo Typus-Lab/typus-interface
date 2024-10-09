@@ -11,10 +11,10 @@ rev = "mainnet"
 [dependencies]
 typus_oracle = { git = "git@github.com:Typus-Lab/typus-oracle.git", subdir = "oracle", rev = "main" }
 typus_nft = { git = "git@github.com:Typus-Lab/typus-nft.git", subdir = "typus_nft", rev = "main" }
-typus = { git = "git@github.com:Typus-Lab/typus-move.git", subdir = "typus", rev = "main" }
-typus_framework = { local = "../typus_framework_interface" }
-spool = { local = "../scallop_interface/spool-contract-interface/spool" }
-ScallopProtocol = { local = "../scallop_interface/sui-lending-protocol/protocol" }
+typus = { local = "../typus" }
+typus_framework = { local = "../typus_framework" }
+spool = { local = "../scallop/spool-contract-interface/spool" }
+ScallopProtocol = { local = "../scallop/sui-lending-protocol/protocol" }
 
 [addresses]
 typus_dov = "0x0"

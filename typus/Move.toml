@@ -1,0 +1,16 @@
+[package]
+name = "typus"
+edition = "2024.beta"
+published-at = "0x0"
+
+[dependencies.Sui]
+git = "https://github.com/MystenLabs/sui.git"
+subdir = "crates/sui-framework/packages/sui-framework"
+rev = "mainnet"
+
+[dependencies]
+typus_nft = { git = "git@github.com:Typus-Lab/typus-nft.git", subdir = "typus_nft", rev = "testnet" }
+
+
+[addresses]
+typus = "0x0"
