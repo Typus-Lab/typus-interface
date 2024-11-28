@@ -1,0 +1,11 @@
+[package]
+name = "otc_example"
+edition = "2024.beta"
+published-at = "0x4f2894cd08fb3954935885219ccbe4ebe71f1c1acca7081a2b8cda2fca4822b9"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "mainnet" }
+typus_interface = { local = "../typus_interface" }
+
+[addresses]
+otc_example = "0x4f2894cd08fb3954935885219ccbe4ebe71f1c1acca7081a2b8cda2fca4822b9"

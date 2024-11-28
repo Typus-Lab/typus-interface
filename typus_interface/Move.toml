@@ -1,10 +1,10 @@
 [package]
 name = "typus_interface"
+published-at = "0x115e2b803a57b0a2c9d67fd176fc9107111f6dcc97de7c13571037bd8044fe54"
 edition = "2024.beta"
-published-at = "0x0"
 
 [dependencies]
 typus_dov = { local = "../typus_dov_single" }
 
 [addresses]
-typus_interface = "0x0"
+typus_interface = "0x115e2b803a57b0a2c9d67fd176fc9107111f6dcc97de7c13571037bd8044fe54"

@@ -9,4 +9,8 @@ module typus_framework::vault {
         metadata: String,
         u64_padding: vector<u64>,
     }
+
+    public fun transfer_bid_receipt(receipt: Option<TypusBidReceipt>, user: address) {
+        abort 0
+    }
 }
