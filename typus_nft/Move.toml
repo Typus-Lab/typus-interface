@@ -1,5 +1,6 @@
 [package]
 name = "typus_nft"
+version = "1.2.14"
 published-at = "0x153ead7b2ccad1483458d41f0daffa35965d89960d1024a4883ba52fb18332b3"
 
 [dependencies.Sui]

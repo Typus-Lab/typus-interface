@@ -8,7 +8,6 @@ module typus_dov::tds_user_entry {
     use typus_framework::vault::{TypusDepositReceipt};
     use typus::ecosystem::Version as TypusEcosystemVersion;
     use typus::leaderboard::TypusLeaderboardRegistry;
-    use typus::tgld::TgldRegistry;
     use typus::user::TypusUserRegistry;
 
     public fun public_raise_fund<D_TOKEN, B_TOKEN>(

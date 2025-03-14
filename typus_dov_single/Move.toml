@@ -1,20 +1,26 @@
 [package]
 name = "typus_dov"
+version = "2.29.7"
+published-at = "0x57d8b97d31282ac3023b392badbbb34584a5d27ec41ba806328376357347ea12"
 edition = "2024.beta"
-published-at = "0xd0468b55d762e51b07ea105695a9fc278f09859f6362c9cd824fe9b9c0fb54f7"
 
-[dependencies.Sui]
-git = "https://github.com/MystenLabs/sui.git"
-subdir = "crates/sui-framework/packages/sui-framework"
-rev = "mainnet"
+[dependencies.SupraOracle]
+git = "https://github.com/naviprotocol/dora-interface.git"
+subdir = "sui/mainnet/supra_holder"
+rev = "main"
+override = true
+
+[dependencies.typus_oracle]
+git = "git@github.com:Typus-Lab/typus-oracle.git"
+subdir = "oracle"
+rev = "main"
 
 [dependencies]
-typus_oracle = { git = "https://github.com/Typus-Lab/typus-oracle.git", subdir = "oracle", rev = "mainnet" }
+typus_framework = { local = "../typus_framework" }
 typus_nft = { local = "../typus_nft" }
 typus = { local = "../typus" }
-typus_framework = { local = "../typus_framework" }
-spool = { local = "../scallop/spool-contract-interface/spool" }
-ScallopProtocol = { local = "../scallop/sui-lending-protocol/protocol" }
+
 
 [addresses]
 typus_dov = "0x321848bf1ae327a9e022ccb3701940191e02fa193ab160d9c0e49cd3c003de3a"
+dov_fee_address = "0x03e3f1ca852358b50837758b5197fedf61e2ea69186c469595baa717560963f9"

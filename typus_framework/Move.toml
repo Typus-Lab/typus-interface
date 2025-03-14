@@ -1,12 +1,57 @@
 [package]
 name = "typus_framework"
+version = "2.28.8"
+published-at = "0x90d05c94e816f601d2f84deddf83e94feed39afeac2f1e60f99205427b07cca0"
 edition = "2024.beta"
-published-at = "0xf71c0c20d3155b1770821b3a0dd6ef0d936de7750904cb17a29ed625305f9f0b"
 
-[dependencies]
-Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "mainnet" }
-spool = { local = "../scallop/spool-contract-interface/spool" }
-ScallopProtocol = { local = "../scallop/sui-lending-protocol/protocol" }
+[dependencies.Sui]
+git = "https://github.com/MystenLabs/sui.git"
+subdir = "crates/sui-framework/packages/sui-framework"
+rev = "mainnet"
+override = true
+
+[dependencies.SuiSystem]
+git = "https://github.com/MystenLabs/sui.git"
+subdir = "crates/sui-framework/packages/sui-system"
+rev = "mainnet"
+override = true
+
+[dependencies.Pyth]
+git = "https://github.com/pyth-network/pyth-crosschain.git"
+subdir = "target_chains/sui/contracts"
+rev = "0918e2a405a99150f2079400738beba6fdb7769e"
+override = true
+
+[dependencies.spool]
+git = "https://github.com/scallop-io/spool-contract-interface.git"
+subdir = "spool"
+rev = "2532555052d9b56505455a6263c89ca129ee201b"
+
+[dependencies.ScallopProtocol]
+git = "https://github.com/scallop-io/sui-lending-protocol.git"
+subdir = "contracts/protocol"
+rev = "ec2332705c2520ffb98f3a69e7e591d4cc2b3677"
+
+[dependencies.Math]
+git = "https://github.com/scallop-io/sui-lending-protocol.git"
+subdir = "contracts/libs/math"
+rev = "ec2332705c2520ffb98f3a69e7e591d4cc2b3677"
+override = true
+
+[dependencies.suilend]
+git = "https://github.com/Typus-Lab/suilend.git"
+subdir = "contracts/suilend"
+rev = "fb0a6940139b8f628bf2a756c9e13c2b2f5afe3b"
+
+[dependencies.lending_core]
+git = "git@github.com:Typus-Lab/navi-protocol-interface.git"
+subdir = "lending_core"
+rev = "b6cd0a569c836d4d93185780e5401852c3975eb0"
+
+[dependencies.oracle]
+git = "git@github.com:Typus-Lab/navi-protocol-interface.git"
+subdir = "oracle"
+rev = "b6cd0a569c836d4d93185780e5401852c3975eb0"
 
 [addresses]
 typus_framework = "0xb4f25230ba74837d8299e92951306100c4a532e8c48cc3d8828abe9b91c8b274"
