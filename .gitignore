@@ -2,3 +2,4 @@ build
 sui.log.*
 _*
 .DS_Store
+node_modules
