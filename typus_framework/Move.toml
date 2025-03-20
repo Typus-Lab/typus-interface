@@ -44,12 +44,12 @@ subdir = "contracts/suilend"
 rev = "fb0a6940139b8f628bf2a756c9e13c2b2f5afe3b"
 
 [dependencies.lending_core]
-git = "git@github.com:Typus-Lab/navi-protocol-interface.git"
+git = "https://github.com/Typus-Lab/navi-protocol-interface.git"
 subdir = "lending_core"
 rev = "b6cd0a569c836d4d93185780e5401852c3975eb0"
 
 [dependencies.oracle]
-git = "git@github.com:Typus-Lab/navi-protocol-interface.git"
+git = "https://github.com/Typus-Lab/navi-protocol-interface.git"
 subdir = "oracle"
 rev = "b6cd0a569c836d4d93185780e5401852c3975eb0"
 
