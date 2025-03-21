@@ -6,7 +6,7 @@ edition = "2024.beta"
 
 [dependencies]
 typus_framework = { local = "../typus_framework" }
-typus_nft = { local = "../typus_nft" }
+# typus_nft = { local = "../typus_nft" }
 typus = { local = "../typus" }
 
 
