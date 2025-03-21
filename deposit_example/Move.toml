@@ -4,9 +4,10 @@ edition = "2024.beta"
 published-at = "0x0"
 
 [dependencies.typus_dov]
-git = "https://github.com/Typus-Lab/typus-interface.git"
-subdir = "typus_dov_single"
-rev = "mainnet"
+local = "../typus_dov_single"
+# git = "https://github.com/Typus-Lab/typus-interface.git"
+# subdir = "typus_dov_single"
+# rev = "mainnet"
 
 [addresses]
 deposit_example = "0x0"
