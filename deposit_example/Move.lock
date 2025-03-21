@@ -222,8 +222,6 @@ id = "typus_dov"
 source = { local = "../typus_dov_single" }
 
 dependencies = [
-  { id = "SupraOracle", name = "SupraOracle" },
-  { id = "SwitchboardStdLib", name = "SwitchboardStdLib" },
   { id = "typus", name = "typus" },
   { id = "typus_framework", name = "typus_framework" },
   { id = "typus_nft", name = "typus_nft" },
@@ -257,9 +255,10 @@ dependencies = [
 
 [[move.package]]
 id = "typus_oracle"
-source = { git = "https://github.com/Typus-Lab/typus-oracle.git", rev = "main", subdir = "oracle" }
+source = { local = "../oracle" }
 
 dependencies = [
+  { id = "MoveStdlib", name = "MoveStdlib" },
   { id = "Pyth", name = "Pyth" },
   { id = "Sui", name = "Sui" },
   { id = "SupraOracle", name = "SupraOracle" },
