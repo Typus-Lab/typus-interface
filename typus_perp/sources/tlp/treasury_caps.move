@@ -1,0 +1,1 @@
+module typus_perp::treasury_caps {}
