@@ -1,7 +1,7 @@
 [package]
 name = "typus_framework"
-version = "2.28.8"
-published-at = "0x90d05c94e816f601d2f84deddf83e94feed39afeac2f1e60f99205427b07cca0"
+version = "2.28.9"
+published-at = "0x18595d85c84f930bb47ee687f69131081b66bc1164d29913bdc5d75ee8364643"
 edition = "2024.beta"
 
 [dependencies.Sui]
@@ -46,12 +46,12 @@ rev = "fb0a6940139b8f628bf2a756c9e13c2b2f5afe3b"
 [dependencies.lending_core]
 git = "https://github.com/Typus-Lab/navi-protocol-interface.git"
 subdir = "lending_core"
-rev = "b6cd0a569c836d4d93185780e5401852c3975eb0"
+rev = "c0215305221f2e383567ca98729c88bba50d01b1"
 
 [dependencies.oracle]
 git = "https://github.com/Typus-Lab/navi-protocol-interface.git"
 subdir = "oracle"
-rev = "b6cd0a569c836d4d93185780e5401852c3975eb0"
+rev = "c0215305221f2e383567ca98729c88bba50d01b1"
 
 [addresses]
 typus_framework = "0xb4f25230ba74837d8299e92951306100c4a532e8c48cc3d8828abe9b91c8b274"

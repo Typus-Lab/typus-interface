@@ -1,7 +1,7 @@
 [package]
 name = "typus"
-version = "1.5.0"
-published-at = "0x72cff6c9853237f97d28aeaa2c14a2258a40321d592570bff9ccafc9a3589294"
+version = "1.5.1"
+published-at = "0xd8d2996c9b53f25d796e25e934cc1064f264c652cf4d3c6e45f1ca2fef50b626"
 edition = "2024.beta"
 
 [dependencies.typus_nft]

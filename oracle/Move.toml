@@ -1,25 +1,12 @@
 [package]
 name = "typus_oracle"
-version = "0.6.3"
-published-at = "0xaf44818c67a878b9eba0c63186b00e80d9fc3d1e2ae02f00fa3993b0e683bff3"
-
-[dependencies.Sui]
-git = "https://github.com/MystenLabs/sui.git"
-subdir = "crates/sui-framework/packages/sui-framework"
-rev = "mainnet"
-override = true
-
-[dependencies.MoveStdlib]
-git = "https://github.com/MystenLabs/sui.git"
-subdir = "crates/sui-framework/packages/move-stdlib"
-rev = "mainnet"
-override = true
+version = "0.7.1"
+published-at = "0x1a9b4b6b49fd43ddb98ff6dc2195b33555b108316a65d646085a3dae9edda43d"
 
 [dependencies.Pyth]
 git = "https://github.com/pyth-network/pyth-crosschain.git"
 subdir = "target_chains/sui/contracts"
 rev = "sui-contract-mainnet"
-override = true
 
 [dependencies.SupraOracle]
 git = "https://github.com/naviprotocol/dora-interface.git"

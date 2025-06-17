@@ -4,10 +4,7 @@ edition = "2024.beta"
 published-at = "0x0"
 
 [dependencies.typus_perp]
-# local = "../typus_perp"
-git = "https://github.com/Typus-Lab/typus-interface.git"
-subdir = "typus_perp"
-rev = "mainnet"
+local = "../typus_perp"
 
 [addresses]
 deposit_example = "0x0"
