@@ -18,7 +18,8 @@ override = true
 [dependencies.Pyth]
 git = "https://github.com/pyth-network/pyth-crosschain.git"
 subdir = "target_chains/sui/contracts"
-rev = "0918e2a405a99150f2079400738beba6fdb7769e"
+rev = "sui-contract-mainnet"
+override = true
 
 [dependencies.SupraOracle]
 git = "https://github.com/naviprotocol/dora-interface.git"

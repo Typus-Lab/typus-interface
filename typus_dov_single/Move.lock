@@ -2,15 +2,14 @@
 
 [move]
 version = 3
-manifest_digest = "8AC40914C748B896C0D533A775AAA60A700AEFF8BCE600E75261825DA35CD3EE"
-deps_digest = "8227D341C0550A37580C10FA45FE148A465225149C69D179737E0FE454AD6AEC"
+manifest_digest = "FD9F82D5D8CC157EC3CCF2D20D5A9461423BE59A51FD4376CF1109504A69E077"
+deps_digest = "04732BFEF428F74DE262001DC455D76B909EBC394B034A9A15CC095E4BDD9CEF"
 dependencies = [
   { id = "Bridge", name = "Bridge" },
   { id = "MoveStdlib", name = "MoveStdlib" },
   { id = "Sui", name = "Sui" },
   { id = "SuiSystem", name = "SuiSystem" },
   { id = "typus", name = "typus" },
-  { id = "typus_dov", name = "typus_dov" },
   { id = "typus_framework", name = "typus_framework" },
   { id = "typus_nft", name = "typus_nft" },
   { id = "typus_oracle", name = "typus_oracle" },
@@ -233,21 +232,6 @@ source = { local = "../typus" }
 dependencies = [
   { id = "Sui", name = "Sui" },
   { id = "typus_nft", name = "typus_nft" },
-]
-
-[[move.package]]
-id = "typus_dov"
-source = { local = "../typus_dov_single" }
-
-dependencies = [
-  { id = "Bridge", name = "Bridge" },
-  { id = "MoveStdlib", name = "MoveStdlib" },
-  { id = "Sui", name = "Sui" },
-  { id = "SuiSystem", name = "SuiSystem" },
-  { id = "typus", name = "typus" },
-  { id = "typus_framework", name = "typus_framework" },
-  { id = "typus_nft", name = "typus_nft" },
-  { id = "typus_oracle", name = "typus_oracle" },
 ]
 
 [[move.package]]

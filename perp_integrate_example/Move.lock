@@ -2,7 +2,7 @@
 
 [move]
 version = 3
-manifest_digest = "650A38AB771EB62D010F74FAD168BD03081058A049CBDA203E89611C76F5CD53"
+manifest_digest = "6DBD62E6D48EDD141D2E545F6987BF623A133311A31BEB234283F97E73D93A21"
 deps_digest = "397E6A9F7A624706DBDFEE056CE88391A15876868FD18A88504DA74EB458D697"
 dependencies = [
   { id = "Bridge", name = "Bridge" },
@@ -32,7 +32,7 @@ dependencies = [
 
 [[move.package]]
 id = "Kiosk"
-source = { git = "https://github.com/Typus-Lab/typus-interface.git", rev = "mainnet", subdir = "kiosk" }
+source = { local = "../kiosk" }
 
 dependencies = [
   { id = "Sui", name = "Sui" },
@@ -60,7 +60,7 @@ source = { git = "https://github.com/MystenLabs/sui.git", rev = "af5297b292c3", 
 
 [[move.package]]
 id = "Pyth"
-source = { git = "https://github.com/pyth-network/pyth-crosschain.git", rev = "0918e2a405a99150f2079400738beba6fdb7769e", subdir = "target_chains/sui/contracts" }
+source = { git = "https://github.com/pyth-network/pyth-crosschain.git", rev = "sui-contract-mainnet", subdir = "target_chains/sui/contracts" }
 
 dependencies = [
   { id = "Sui", name = "Sui" },
@@ -125,7 +125,7 @@ dependencies = [
 
 [[move.package]]
 id = "Wormhole"
-source = { git = "https://github.com/wormhole-foundation/wormhole.git", rev = "sui-upgrade-mainnet", subdir = "sui/wormhole" }
+source = { git = "https://github.com/wormhole-foundation/wormhole.git", rev = "sui/mainnet", subdir = "sui/wormhole" }
 
 dependencies = [
   { id = "Sui", name = "Sui" },
@@ -224,7 +224,7 @@ dependencies = [
 
 [[move.package]]
 id = "typus"
-source = { git = "https://github.com/Typus-Lab/typus-interface.git", rev = "mainnet", subdir = "typus" }
+source = { local = "../typus" }
 
 dependencies = [
   { id = "Sui", name = "Sui" },
@@ -233,7 +233,7 @@ dependencies = [
 
 [[move.package]]
 id = "typus_dov"
-source = { git = "https://github.com/Typus-Lab/typus-interface.git", rev = "mainnet", subdir = "typus_dov_single" }
+source = { local = "../typus_dov_single" }
 
 dependencies = [
   { id = "Bridge", name = "Bridge" },
@@ -248,7 +248,7 @@ dependencies = [
 
 [[move.package]]
 id = "typus_framework"
-source = { git = "https://github.com/Typus-Lab/typus-interface.git", rev = "mainnet", subdir = "typus_framework" }
+source = { local = "../typus_framework" }
 
 dependencies = [
   { id = "Math", name = "Math" },
@@ -264,7 +264,7 @@ dependencies = [
 
 [[move.package]]
 id = "typus_nft"
-source = { git = "https://github.com/Typus-Lab/typus-interface.git", rev = "mainnet", subdir = "typus_nft" }
+source = { local = "../typus_nft" }
 
 dependencies = [
   { id = "Kiosk", name = "Kiosk" },
@@ -273,7 +273,7 @@ dependencies = [
 
 [[move.package]]
 id = "typus_oracle"
-source = { git = "https://github.com/Typus-Lab/typus-interface.git", rev = "mainnet", subdir = "oracle" }
+source = { local = "../oracle" }
 
 dependencies = [
   { id = "MoveStdlib", name = "MoveStdlib" },
@@ -285,7 +285,7 @@ dependencies = [
 
 [[move.package]]
 id = "typus_perp"
-source = { git = "https://github.com/Typus-Lab/typus-interface.git", rev = "mainnet", subdir = "typus_perp" }
+source = { local = "../typus_perp" }
 
 dependencies = [
   { id = "Bridge", name = "Bridge" },
