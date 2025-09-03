@@ -1,8 +1,8 @@
 [package]
 name = "typus_perp"
 edition = "2024.beta"
-version = "0.0.14"
-published-at = "0x4b119d8c0e7c87a1b25df8ef3646a5205f1a20811930f742656e7db97dd2e3f5"
+version = "0.0.20"
+published-at = "0x21d5e2291c0c40cad074a702cde333a388fb592b7cf5949dd1250bcd72d7cbfa"
 
 [dependencies]
 typus_oracle = { local = "../oracle" }

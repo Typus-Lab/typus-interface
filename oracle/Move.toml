@@ -2,6 +2,7 @@
 name = "typus_oracle"
 version = "0.7.1"
 published-at = "0x1a9b4b6b49fd43ddb98ff6dc2195b33555b108316a65d646085a3dae9edda43d"
+edition = "2024.beta"
 
 [dependencies.Pyth]
 git = "https://github.com/pyth-network/pyth-crosschain.git"
