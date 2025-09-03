@@ -114,4 +114,19 @@ module typus_perp::trading {
     ) {
         abort 0
     }
+
+    #[allow(unused)]
+    public fun cancel_trading_order<C_TOKEN, BASE_TOKEN>(
+        // for share objects
+        version: &Version,
+        registry: &mut MarketRegistry,
+        market_index: u64,
+        // order parameters
+        order_id: u64,
+        trigger_price: u64, // pass this for reducing network fee cost
+        mut order_user: Option<address>, // if some => ctx should be a manager; none => cancel sender(ctx)'s order
+        ctx: &mut TxContext,
+    ): Coin<C_TOKEN> {
+        abort 0
+    }
 }
