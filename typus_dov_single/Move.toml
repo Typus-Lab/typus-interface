@@ -1,7 +1,7 @@
 [package]
 name = "typus_dov"
-version = "2.29.16"
-published-at = "0x2e72a7f244cbc0b637848b493182be20d7459b7fc212811b23b84ef7eb581e18"
+version = "2.29.25"
+published-at = "0xb8290daeb5204b3527cbc57637df55b12cc28d17ce08eadc910ae4cd8f9a695a"
 edition = "2024.beta"
 
 [dependencies]
